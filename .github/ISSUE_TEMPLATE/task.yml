@@ -1,0 +1,36 @@
+name: Task
+description: A scoped unit of work such as a refactor, chore, or maintenance item
+title: "[Task] "
+labels: ["task"]
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Refactor
+        - Chore
+        - Maintenance
+        - Documentation
+        - Infrastructure
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        -
+        -
+    validations:
+      required: true
