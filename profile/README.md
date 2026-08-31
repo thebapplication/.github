@@ -1,4 +1,4 @@
-![We Are B.](assets/cover.jpg)
+![We Are B.](./assets/cover.jpg)
 
 # We Are B.
 
